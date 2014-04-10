@@ -1820,7 +1820,7 @@ free_interfaces:
 			alt = &intf->altsetting[0];
 
 		intf->intf_assoc =
-			find_iad(dev, cp, alt->desc.bInterfaceNumber);
+        find_iad(dev, cp, alt->desc.bInterfaceNumber);
 		intf->cur_altsetting = alt;
 		usb_enable_interface(dev, intf, true);
 		intf->dev.parent = &dev->dev;

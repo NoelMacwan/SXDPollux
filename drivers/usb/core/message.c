@@ -1820,7 +1820,11 @@ free_interfaces:
 			alt = &intf->altsetting[0];
 
 		intf->intf_assoc =
+<<<<<<< HEAD
 			find_iad(dev, cp, alt->desc.bInterfaceNumber);
+=======
+        find_iad(dev, cp, alt->desc.bInterfaceNumber);
+>>>>>>> 54c9848... Upgrading Linux Kernel 3.4.4
 		intf->cur_altsetting = alt;
 		usb_enable_interface(dev, intf, true);
 		intf->dev.parent = &dev->dev;
